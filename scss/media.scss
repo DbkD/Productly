@@ -1,0 +1,397 @@
+@import "main.scss";
+   //    HORIZONTAL  
+@media (max-width: 1220px) {
+   .strategies {
+      &__content {
+         display: flex;
+         flex-direction: column;
+         align-items: center; }
+
+      }
+
+}
+@media (max-width: 1100px) {
+   .team {
+      margin-bottom: 0;
+      &__item {
+         display: none; }}}
+@media (max-width: 1024px) {
+   .top {
+      &__inner {
+         background-image: none;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;  }
+         &__btn {
+            margin-bottom: 15px;
+            margin-right: 0;
+            text-align: center;  }
+         &__link {
+            padding: 0;
+            margin-left: 25px;
+            &:before {
+               left: -25px; }}}
+   .validation {
+      &__inner {
+         background-image: none;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center; }
+      &__text {
+         text-align: justify;
+      }   }    
+   .decision {
+      &__inner {
+         background-image: none;
+         display: flex;
+         justify-content: center; }
+      &__content {
+         margin: 0;
+         text-align: center; }
+      &__text {
+         text-align: justify; }
+      &__list {
+         text-align: left;
+         &-item {
+            padding-left: 45px; }}}       
+   .marketers {
+      &__inner {
+         background-image: none;
+         display: flex;
+         justify-content: center;   }
+      &__content {
+         text-align: center;
+      }
+      &__text {
+         text-align: justify; }}       
+            
+            }
+
+@media (max-width: 992px) {
+   .header {
+      &__inner {
+         height: auto;
+         flex-wrap: wrap;
+         padding-top: 15px;}
+      & .menu {
+         order: 1;
+         padding-top: 20px;
+         width: 100%;
+         &__list {
+            justify-content: flex-end; }}} 
+   .second {
+      &__inner {
+         padding: 0 10px; }
+
+         &__list {
+            flex-wrap: wrap;         }
+            gap: 25px;
+
+         &__item {
+            flex: 1 1 auto;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            
+            &-title {
+               padding-left: 65px;
+               margin-bottom: 25px;
+               text-align: left; }
+            &-text {
+               text-align: left;
+ }
+            &:last-child {
+               margin-bottom: 0; }
+            &-title {
+               padding-top: 0;}} }
+   .strategies {
+      &__item {
+         position: relative;
+         &-title {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center; } }   }
+   .footer {
+      &__logo {
+         display: none; }
+      &__inner {
+         padding: 25px 10px;  }
+   
+   
+      }
+         }
+            
+@media (max-width: 800px) {
+   .strategies {
+      &__item {
+         display: flex;
+         flex-direction: column;
+         align-items: center;      }
+
+         &__slider {
+            position: relative;
+         }
+         & .slick-arrow {
+            position: relative;
+            z-index: 15;
+            font-size: 0;
+            width: 40px;
+            height: 40px;
+            background-color: $orange;
+            border-radius: 50%;
+            border: none; 
+}
+         & .slick-prev {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            &:before {
+               content: '';
+               position: absolute;
+               transform: rotate(135deg);
+               top: 17px;
+               left: 19px;
+               width: 2px;
+               height: 12px;
+               background-color: #fff;  }
+            &:after {
+               content: '';
+               position: absolute;
+               transform: rotate(-135deg);
+               width: 2px;
+               top: 10px;
+               left: 19px;
+               height: 12px;
+               background-color: #fff;  }
+            &:active {
+               transform: translateX(-5px);
+               transition: transform .3s; } }
+
+         & .slick-next {
+            position: absolute;
+            top: 50%;
+            right: 15%;
+            &:before, &:after {
+               content: '';
+               position: absolute;
+               height: 12px;
+               width: 2px;
+               background-color: #fff; }
+               &:before {
+                  transform: rotate(135deg);
+                  left: 19px;
+                  top: 10px;        }
+               &:after {
+                  transform: rotate(-135deg);
+                  left: 19px;
+                  top: 17px;     }
+            &:active {
+               transform: translateX(5px);
+               transition: transform .3s;    }}   }
+
+
+            }
+
+@media (max-width: 767px) {
+   .header {
+      &__inner {
+         display: block; }
+      & .menu {
+         display: none;
+         &__burger {
+            display: flex;
+            position: absolute;
+            z-index: 25;
+            top: 10px;
+            right: 15px; } } } 
+      & .user-nav {
+         margin-top: 25px;
+         margin-left: 0;
+         margin-right: 0;
+         text-align: center; }
+      .open-menu {
+      opacity: 0.3;
+
+      & span {
+         transform: rotate(-90deg);
+         transition: transform ease .3s;
+      &:before {
+         width: 15px;
+         transition: transform ease .5s;
+         transform: rotate(45deg);}
+      &:after {
+         width: 15px;
+         transition: transform ease .5s;
+         transform: rotate(-45deg);}}
+
+      &.menu {
+         display: block;
+         padding-top: 0;
+         opacity: 1;
+         &__list {
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            top: 64px;
+            width: 75%;
+            align-items: center;
+            opacity: 1;
+            z-index: 15;
+            background-color: black;
+            &-link {
+               color: white;
+               opacity: 1;  }
+            &-item {
+               opacity: 1;
+               padding: 15px;
+               width: 100%;
+               text-align: center; }
+            &-item + &-item {
+               margin: 0; } }}}
+   .top {
+      &__inner {
+         padding-top: 100px;
+      }
+      &__title {
+         font-size: 36px;
+         line-height: 48px;} }
+   .second {
+      &__title {
+         line-height: 48px;  }   }
+   .footer {
+      &__inner {
+         flex-direction: column;
+         align-items: center;
+         text-align: center; }
+
+      &__menu {
+         margin-bottom: 10px;
+         &-title {
+            margin-bottom: 25px;
+            border-bottom: 1px solid black; } }
+      &__form {
+         width: 80%;
+      }
+   }
+      }
+
+@media (max-width: 600px) {
+   .second {
+      &__item {
+         width: 100%;
+         margin-bottom: 45px;
+         &-text {
+            text-align: center;
+            max-width: 100%;}}}
+
+
+         }
+@media (max-width: 500px) {
+   .open-menu {
+      &.menu {
+         &__list {
+            width: 100%;
+            &-link {
+               font-size: 16px;
+            }
+            &-item {
+               text-align: center; }}}}
+   .top {
+      &__title {
+         font-size: 24px;
+         line-height: 36px;
+         max-width: 80%;
+      }
+      &__text {
+         font-size: 16px;
+         line-height: 24px;
+         text-align: justify;
+         padding: 0 10px;
+         margin-bottom: 30px; }}
+   .second {
+      &__title {
+         font-size: 24px;
+         line-height: 36px;
+         max-width: 80%;
+      }
+      &__item {
+         &-title {
+            font-size: 18px; }} }
+   .validation {
+      &__title {
+         font-size: 24px;
+         line-height: 36px; }
+      &__text {
+         font-size: 16px;
+         line-height: 24px;
+         text-align: justify;
+         padding: 0 10px; }  }       
+   .decision {
+      &__title {
+            font-size: 24px;
+            line-height: 36px; }
+      &__text {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: justify;
+            padding: 0 10px; }}
+   .marketers {
+      &__title {
+         font-size: 24px;
+         line-height: 36px;
+      }
+      &__text {
+         font-size: 16px;
+         line-height: 24px;
+         padding: 0 10px; }}     
+   .team {
+      &__title {
+         font-size: 24px;
+         line-height: 36px;}
+      &__text {
+         font-size: 16px;
+         line-height: 24px;
+         text-align: justify;
+         padding: 0 10px; } } 
+   .strategies {
+
+
+
+      &__title {
+         font-size: 24px;
+         line-height: 36px;}
+      &__text {
+         font-size: 16px;
+         line-height: 24px;
+         text-align: justify;
+         padding: 0 10px; }   }
+
+            }
+
+
+      //    VERTICAL
+@media (max-height: 600px) {
+   .top {
+      &__inner {
+         padding: 70px 0 40px;}
+      &__title {
+         margin-bottom: 15px;
+      }
+   }
+} 
+
+
+
+
+
+
+
+
+
+
+
